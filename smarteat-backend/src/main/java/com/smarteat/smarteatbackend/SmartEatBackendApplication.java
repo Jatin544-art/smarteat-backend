@@ -1,13 +1,13 @@
-package com.example.smarteat_backend;
+package com.smarteat.smarteatbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SmarteatBackendApplication {
+public class SmartEatBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SmarteatBackendApplication.class, args);
+		SpringApplication.run(SmartEatBackendApplication.class, args);
 	}
 
 }
