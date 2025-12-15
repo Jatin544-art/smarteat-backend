@@ -127,9 +127,8 @@ map.put("mutton biryani", new Double[]{380.0, 20.0, 14.0, 45.0});
         return null;
     }
 
-    @PostMapping("/log")
-    @GetMapping("/log")
-    public Map<String, Object> addFood(
+        @PostMapping("/log")
+        public Map<String, Object> addFood(
             @RequestParam String foodName,
             @RequestParam double quantity
     ) {
