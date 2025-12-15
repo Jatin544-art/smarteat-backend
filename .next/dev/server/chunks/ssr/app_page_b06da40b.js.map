@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/JATIN/Downloads/smarteat-backend/app/page.js"],"sourcesContent":["\"use client\";\r\n\r\nimport { useEffect } from \"react\";\r\nimport { useRouter } from \"next/navigation\";\r\n\r\nexport default function Home() {\r\n  const router = useRouter();\r\n\r\n  useEffect(() => {\r\n    const user = localStorage.getItem(\"smarteat-user\");\r\n    if (user) router.push(\"/dashboard\");\r\n    else router.push(\"/login\");\r\n  }, [router]);\r\n\r\n  return null;\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;AAKe,SAAS;IACtB,MAAM,SAAS,IAAA,+IAAS;IAExB,IAAA,kNAAS,EAAC;QACR,MAAM,OAAO,aAAa,OAAO,CAAC;QAClC,IAAI,MAAM,OAAO,IAAI,CAAC;aACjB,OAAO,IAAI,CAAC;IACnB,GAAG;QAAC;KAAO;IAEX,OAAO;AACT"}}]
-}

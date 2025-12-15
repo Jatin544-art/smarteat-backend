@@ -1,3 +1,0 @@
-module.exports=[98474,a=>{"use strict";let b="http://localhost:8080/api";async function c(a,c){let d=await fetch(`${b}/log?foodName=${encodeURIComponent(a)}&quantity=${c}`,{method:"POST"});if(!d.ok)throw Error("Failed to add food");return d.json()}async function d(){let a=await fetch(`${b}/summary/today`);if(!a.ok)throw Error("Failed to fetch today's summary");return a.json()}async function e(a,c){let d=await fetch(`${b}/summary/month?year=${a}&month=${c}`);if(!d.ok)throw Error("Failed to fetch month summary");return d.json()}a.s(["addFood",()=>c,"getMonthSummary",()=>e,"getTodaySummary",()=>d])}];
-
-//# sourceMappingURL=lib_api_7c19a9fc.js.map
